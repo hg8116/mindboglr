@@ -16,7 +16,7 @@ const SignUp = () => {
 
   const collectData = async () => {
     console.log(name, email, password)
-    let result = await fetch("http://localhost:8080/register", {
+    let result = await fetch("https://mindboglr.onrender.com/register", {
       method: "post",
       body: JSON.stringify({ name, email, password }),
       headers: {

@@ -13,7 +13,7 @@ const Login = () => {
   }, [])
 
   const handleLogin = async () => {
-    let result = await fetch("http://localhost:8080/login", {
+    let result = await fetch("https://mindboglr.onrender.com/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {
